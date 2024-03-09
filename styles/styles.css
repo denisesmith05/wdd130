@@ -9,7 +9,7 @@ body {
     padding: 0;
 }
 header {
-    background-color: #ffcccc; /* Light pink */
+    background-color: #ffcccc;
     padding: 20px;
 }
 nav a {
@@ -25,9 +25,9 @@ main {
 aside {
     width: 200px;
     margin: 20px 10px;
-    border: 1px solid #99cccc; /* Light teal */
+    border: 1px solid #99cccc;
     padding: 10px;
-    background-color: #e0f2f1; /* Light teal */
+    background-color: #e0f2f1;
 }
 aside img {
     width: 100%;
@@ -36,8 +36,8 @@ aside img {
 }
 footer {
     margin-top: 20px;
-    border-top: 1px solid #99cccc; /* Light teal */
-    background-color: #ffcccc; /* Light pink */
+    border-top: 1px solid #99cccc;
+    background-color: #ffcccc;
     text-align: center;
     padding: 20px 0;
 }
