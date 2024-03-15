@@ -1,6 +1,15 @@
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: #e0f2f1;
+    color: #333;
+}
+
 h1 {
     font-family: 'Rock Salt', 'Bradley Hand', cursive;
 }
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -8,32 +17,39 @@ body {
     margin: 0;
     padding: 0;
 }
+
 header {
     background-color: #ffcccc;
     padding: 20px;
 }
+
 nav a {
     text-decoration: none;
     color: #333;
     margin-right: 20px;
 }
+
 main {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
 }
+
 aside {
     width: 200px;
     margin: 20px 10px;
     border: 1px solid #99cccc;
     padding: 10px;
     background-color: #e0f2f1;
+    position: relative; /* Added for absolute positioning */
 }
+
 aside img {
     width: 100%;
     height: auto;
     border-radius: 5px;
 }
+
 footer {
     margin-top: 20px;
     border-top: 1px solid #99cccc;
