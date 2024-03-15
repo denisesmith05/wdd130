@@ -62,3 +62,7 @@ footer {
 main img {
     float: right;
 }
+
+aside h2 {
+    position: absolute;
+}
