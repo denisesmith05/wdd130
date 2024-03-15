@@ -1,6 +1,6 @@
 /* Class Selectors */
 .box {
-    margin: 0; /* Changed margin to 0 */
+    margin: 0;
     padding: 1rem;
     box-sizing: border-box;
     background-color: #e0f2f1;
@@ -60,5 +60,5 @@ footer {
 }
 
 main img {
-    float: right; /* Added float: right */
+    float: right;
 }
