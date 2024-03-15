@@ -1,5 +1,6 @@
+/* Class Selectors */
 .box {
-    margin: 1rem;
+    margin: 0; /* Changed margin to 0 */
     padding: 1rem;
     box-sizing: border-box;
     background-color: #e0f2f1;
@@ -41,7 +42,7 @@ aside {
     border: 1px solid #99cccc;
     padding: 10px;
     background-color: #e0f2f1;
-    position: relative; /* Added for absolute positioning */
+    position: relative;
 }
 
 aside img {
@@ -56,4 +57,8 @@ footer {
     background-color: #ffcccc;
     text-align: center;
     padding: 20px 0;
+}
+
+main img {
+    float: right; /* Added float: right */
 }
