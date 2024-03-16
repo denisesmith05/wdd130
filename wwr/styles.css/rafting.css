@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+:root {
+    --primary-color: #046ab5;
+    --secondary-color: #f68e56;
+    --text-color: #333;
+    --background-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    max-height: 50px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for emphasis */
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Darken the background */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.hero article img {
+    float: right;
+    width: 150px;
+    margin-left: 10px;
+    border-radius: 50%; /* Make the image rounded */
+    border: 2px solid white; /* Add border for emphasis */
+}
+
+.hero article p {
+    color: white;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    color: var(--secondary-color); /* Use secondary color for headings */
+    margin-bottom: 10px;
+}
+
+section p {
+    line-height: 1.5;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: center;
+}
+
+.sociallinks a {
+    margin: 0 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sociallinks a:hover {
+    transform: scale(1.2);
+}
+
+.sociallinks img {
+    width: 40px;
+}
