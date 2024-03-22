@@ -4,14 +4,6 @@
     box-sizing: border-box;
 }
 
-.box {
-    margin: 0;
-    padding: 1rem;
-    box-sizing: border-box;
-    background-color: #e0f2f1;
-    color: #333;
-}
-
 h1 {
     font-family: 'Rock Salt', 'Bradley Hand', cursive;
 }
@@ -48,19 +40,24 @@ nav a {
 
 main {
     margin: 1rem;
+    grid-column: 1/2;
 }
 
 aside {
     width: 20rem;
-    margin: 1rem;
     border: 5px dotted #99cccc;
-    padding: 20px;
-    background-color: #e0f2f1;
     color: #000;
     text-align: center;
     border-radius: 5px;
+    position: relative;
 }
 
+aside h2 {
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    color:aliceblue;
+}
 aside img {
     width: 200px;
     height: auto;
@@ -71,6 +68,7 @@ aside img {
 main img {
     width:150px;
     height:auto;
+    float: right;
 }
 
 footer {
@@ -89,8 +87,12 @@ footer {
     margin: 0 auto;
 }
 
-main {
-    grid-column: 1/2;
-}
-
 /* Class Selectors */
+
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: #e0f2f1;
+    color: #333;
+}
