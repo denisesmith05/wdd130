@@ -1,48 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-
-:root {
-    --primary-color: #046ab5;
-    --secondary-color: #f68e56;
-    --text-color: #333;
-    --background-color: #fff;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    color: var(--text-color);
-    background-color: var(--background-color);
-}
-
-header {
-    background-color: var(--primary-color);
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header img {
-    max-height: 50px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
 main {
-    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
 .hero {
@@ -63,14 +22,14 @@ main {
     color: white;
     font-size: 3em;
     text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for emphasis */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero article {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background-color: rgba(0, 0, 0, 0.7); /* Darken the background */
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 10px;
     border-radius: 5px;
 }
@@ -79,8 +38,8 @@ main {
     float: right;
     width: 150px;
     margin-left: 10px;
-    border-radius: 50%; /* Make the image rounded */
-    border: 2px solid white; /* Add border for emphasis */
+    border-radius: 50%;
+    border: 2px solid white;
 }
 
 .hero article p {
@@ -92,7 +51,7 @@ section {
 }
 
 section h2 {
-    color: var(--secondary-color); /* Use secondary color for headings */
+    color: var(--secondary-color);
     margin-bottom: 10px;
 }
 
@@ -100,11 +59,36 @@ section p {
     line-height: 1.5;
 }
 
+.adventures {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.adventures figure {
+    margin-right: 20px;
+}
+
+.adventures img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.adventures figcaption {
+    text-align: center;
+    margin-top: 5px;
+}
+
 footer {
     background-color: var(--primary-color);
     padding: 20px;
     color: white;
     text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 footer p {
@@ -113,7 +97,9 @@ footer p {
 
 .sociallinks {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
 }
 
 .sociallinks a {
