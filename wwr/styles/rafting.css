@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+:root {
+    --primary-color:#f99334;
+    --secondary-color: #e7c24f;
+    --accent1-color:#0B4272;
+    --accent2-color: #381d2a;
+  
+    --heading-font: 'font-name', 'Rock Salt';
+    --paragraph-font: 'font-name', serif;
+  
+    --nav-background-color: #0B4272;
+    --nav-link-color: #ffffff;
+    --nav-hover-link-color: #000000;
+    --nav-hover-background-color: #84afe6;
+  }
+
+header {
+    padding: 50px;
+    background-color:#ad6d31;
+}
+
 main {
     display: grid;
     grid-template-columns: 1fr;
@@ -10,6 +32,7 @@ main {
 }
 
 .hero img {
+    display: block;
     width: 100%;
     height: auto;
 }
