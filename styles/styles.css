@@ -6,6 +6,7 @@
 
 h1 {
     font-family: 'Rock Salt', 'Bradley Hand', cursive;
+    border-bottom: 2px solid #99cccc;
 }
 
 body {
@@ -31,6 +32,7 @@ nav{
     align-items: center;
 }
 nav a {
+    display: block;
     text-decoration: none;
     color: #333;
     padding: 0.5rem;
@@ -40,7 +42,7 @@ nav a {
 
 main {
     margin: 1rem;
-    grid-column: 1/2;
+    grid-column: 2/3;
 }
 
 aside {
@@ -50,6 +52,8 @@ aside {
     text-align: center;
     border-radius: 5px;
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside h2 {
@@ -73,19 +77,12 @@ main img {
 
 footer {
     margin-top: 20px;
-    border-top: 1px solid #99cccc;
+    border-top: 5px solid #99cccc;
     background-color: #ffcccc;
     text-align: center;
     padding: 20px 0;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 20rem;
-    align-items: center;
-    max-width: 840px;
-    margin: 0 auto;
-}
 
 /* Class Selectors */
 
@@ -95,4 +92,17 @@ footer {
     box-sizing: border-box;
     background-color: #e0f2f1;
     color: #333;
+}
+
+header, .grid, footer {
+    display: grid;
+    grid-template-columns: 1fr 20rem;
+    align-items: center;
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
 }
