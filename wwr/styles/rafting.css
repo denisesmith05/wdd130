@@ -38,13 +38,16 @@ nav {
 .navigation {
     display: flex;
     list-style: none;
+    text-align: center;
 }
 
 .navigation a {
-    display: block;
+    display: inline-block;
+    margin: 0 10px;
     padding: 100px;
     color:rgba(0, 0, 0, 0.5);
     text-decoration: none;
+    font-weight: bold;
 }
 
 main {
@@ -52,6 +55,24 @@ main {
     grid-template-columns: 1fr;
     gap: 20px;
 }
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.map iframe {
+    flex: 1;
+    margin-left: 20px; /* Adjust margin as needed */
+    margin-right: 240px;
+    height: 200px;
+    width: 250px;
+}
+
 
 .hero {
     position: relative;
@@ -62,6 +83,7 @@ main {
     display: block;
     width: 100%;
     height: auto;
+
 }
 
 .hero h1 {
@@ -98,7 +120,7 @@ main {
 }
 
 section {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 section h2 {
@@ -136,13 +158,14 @@ section p {
 
 .adventures h2 {
     color: var(--secondary-color);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     width: 100%;
 }
 
 .adventures figure {
     margin: 0 10px;
     flex: 0 0 18%;
+    align-items: center;
 }
 
 .adventures img {
@@ -194,4 +217,92 @@ footer p {
 
 .sociallinks img {
     width: 40px;
+}
+
+form {
+    width: 95%;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+legend {
+    padding: .5rem;
+    color: navy;
+    font-size: 1.3em;
+}
+
+label, input, button, select, textarea {
+    font-family: Roboto, Arial, sans-serif;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+textarea {
+    width: 98.5%; /* Make the textarea span almost the full width */
+    margin-top: 0.5rem; /* Add some space between the input elements */
+}
+
+/* Adjustments for label */
+label[for="feedback"] {
+    display: block; /* Make the label a block element */
+    margin-bottom: 0.5rem; /* Add some space below the label */
+    margin-top: .5rem;
+    text-align: center;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-bottom: auto;
+    vertical-align: text-bottom;
+}
+
+button {
+    margin: 1rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
 }
