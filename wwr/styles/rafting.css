@@ -91,11 +91,23 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color:navy;
+    color: navy;
     font-size: 3em;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+.hero h2 {
+    position: absolute;
+    top: calc(50% + 2em); /* Adjust top position to go under h1 */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: navy;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 
 .hero article {
     position: absolute;
@@ -326,4 +338,54 @@ th, td {
 thead {
     background-color: var(--secondary-color);
     color: white;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.grid-container > div {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.grid-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.grid-container h3 {
+    margin-top: 10px;
+    color: #333;
+}
+
+.grid-container p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.grid-item img {
+    max-width: 100%;
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+    margin-left: 72px
+}
+
+.grid-cap figcaption {
+    max-width: 100%;
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+    margin-left: 72px;
 }
